@@ -1,0 +1,300 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+}
+.flex{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+.flexd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+
+}
+:root {
+    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-primary: "Amatic SC", sans-serif;
+    --font-secondary: "Inter", sans-serif;
+}
+
+/* Colors */
+:root {
+--color-default: #212529;
+--color-primary: #ce1212;
+--color-secondary: #37373f;
+}
+
+/* Smooth scroll behavior */
+:root {
+scroll-behavior: smooth;
+}
+
+header{
+background-color: rgb(255, 255, 255,0.1);
+font-family: var(--color-secondary);
+}
+header ul li{
+font-weight: 600;
+margin: 0px 5px;
+}
+.book{
+background-color: var(--color-primary);
+color: #fff;
+border: none;
+padding: 8px 20px;
+}
+
+.book:hover{
+    background-color: #e64747;
+}
+
+.navbar-brand span{
+    color: var(--color-primary);
+}
+
+
+/* home section */
+
+#home{
+    height:100vh;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+.title h1{
+    font-family: var(--font-primary);
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+@media screen and (max-width:992px) and (min-width:768px){
+    .cols-reverse{
+        flex-direction: column-reverse;
+    }
+    .home-media{
+        width: 100%;
+    }
+    .home-media .box-img img{
+        width: 50% !important;
+    }
+    .home-media .caption{
+        text-align: center;
+    }
+}
+@media screen and (max-width:767px){
+    .cols-reverse{
+        flex-direction: column-reverse;
+    }
+    
+    .home-media .caption{
+        text-align: center;
+    }
+    .btn-home button{
+        margin:5px;
+    }
+}
+
+/*======================================= ABOUT US============================ */
+.head{
+    text-align: center !important;
+}
+.head h2{
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: calc(1.5rem + 3vw);
+}
+.head h2 span{
+    color: var(--color-primary);
+}
+.about-caption p{
+    font-family: var(--font-secondary); 
+}
+.fa-check-double{
+    color: var(--color-primary);
+    padding: 0px 5px;
+}
+
+@media screen and (max-width:992px){
+    .about-media div{
+        width: 100%;
+    }
+    
+}
+
+/* ====================================== */
+
+.card i{
+    color: var(--color-primary);
+
+}
+.icon-circle{
+    background-color: rgb(206, 18, 18,0.2);
+}
+@media screen and (max-width:992px){
+    .card-info , .card {
+        width: 100%;
+    }
+    
+}
+
+/* ====================================== */
+#stats{
+    background-image: url(../assets/img/stats-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.box-status{
+    line-height: 9rem;
+}
+
+.bg-opacity{
+    background-color: rgba(0, 0, 0,0.7);
+}
+
+/* menu =========================*/
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+.menu a{
+    color: var(--color-primary);
+    background-color: unset;
+    border: none;
+    border-bottom:solid 2px  ;
+    margin: 0px 10px;
+
+}
+.head-mini h2{
+    font-family: var(--font-default);
+    font-weight: bold;
+    color: var(--color-primary);
+    font-size: 3rem;
+}
+
+
+
+.btn-menu{
+    padding: 5px;
+    font-size:calc(0.7rem + 0.5vw) ;
+    font-weight: 600;
+    color: var(--color-default);
+    margin: 5px .7rem;
+    border: unset !important;
+    border-bottom: solid 1px var(--color-secondary) !important ;
+    transition: 0.5s all;
+    min-width:calc(0.5rem + 5vw) ;
+}
+.btn-menu:hover{
+    color: var(--color-primary);
+    border-bottom: solid 1px #ccc !important ;
+}
+
+
+.btn-menu:focus{
+    border-bottom: solid 2px var(--color-primary) !important;
+    color: var(--color-primary) !important;
+}
+
+
+/*======================================= TESTIMONIALS ============================ */
+
+.fa-quote-left ,.fa-quote-right{
+    color: var(--color-primary);
+}
+.five-star{
+    color: yellow;
+}
+
+.testimonials-caption::before{
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 0%;
+    left: -5%;
+    
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:darkgrey;
+}
+.carousel-indicators [data-bs-target]:focus{
+    background-color: var(--color-primary);
+}
+.bg-eee{
+    background-color:#eee;
+}
+
+@media screen and (max-width:576px){
+    .TESTIMONIALS{
+        padding: 0px !important;
+    }
+
+}
+
+/*======================================= chefs ============================ */
+
+.chefs-icons{
+    position: absolute;
+    top: 5%;
+    right: -50%;
+    background-color:  rgba(255, 255, 255, 0.3);
+    color: rgba(55, 55, 63, 0.4);
+    transition: 0.5s;
+
+}
+
+.chefs-icons i:hover {
+    color: #212529;
+}
+.Chefs-box {
+    overflow: hidden;
+}
+.chefs-card:hover .chefs-icons{
+    right: 2%;
+}
+.chefs-card{
+    transition: all 0.5s;
+}
+.chefs-card:hover {
+    transform: scale(1.1);
+}
+
+/*======================================= book table form  ============================ */
+
+
+
+/*======================================= footer  ============================ */
+
+.foot-info p{
+color: #ccc;
+}
+
+.footer-icons i{
+    cursor: pointer;
+    border: solid 1px #37373f;
+    border-radius: 100% ;
+    color: #ccc !important;
+
+}
+.footer-icons i:hover{
+    border: solid 1px white;
+    border-radius: 100% ;
+    color: #fff !important;
+
+}
+
